@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scrollable Table with Styles</title>
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style1.css">
+    <style>
+        .button-container {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .button-container button {
+            background-color: #459294;
+            color: #fff;
+            border: none;
+            padding: 20px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #3e7877;
+        }
+
+        .button-container button:focus {
+            outline: none;
+        }
+        .button-container button:active {
+            background-color: #367328;
+        }
+
+        .button-container button.style-button {
+            background-color: #3498db;
+        }
+
+        .button-container button.style-button:hover {
+            background-color: #2980b9;
+        }
+
+        .button-container button.style-button:active {
+            background-color: #1f618d;
+        }
+
+        .table-container {
+            margin-top: 40px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Scrollable Table</h1>
+        <div class="button-container">
+            <button onclick="changeStyle(1)">Style 1</button>
+            <button onclick="changeStyle(2)">Style 2</button>
+            <button onclick="changeStyle(3)">Style 3</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Week</td>
+                        <td>42</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function changeStyle(styleNumber) {
+            const stylesheet = document.getElementById('stylesheet');
+            stylesheet.href = `style${styleNumber}.css`;
+        }
+    </script>
+</body>
+
+</html>
